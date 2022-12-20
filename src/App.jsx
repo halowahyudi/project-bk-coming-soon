@@ -1,11 +1,20 @@
-import { useState } from "react";
+import React from "react";
 import "./App.css";
+import { Helmet } from "react-helmet";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
+      <Helmet>
+        <title>Peduli Siswa</title>
+        <meta
+          name="description"
+          content="Halaman ini sedang dikembangkan oleh tim kami yang terdiri
+                  dari para profesional dan ahli dalam bidangnya. Kami akan
+                  menghadirkan sesuatu yang luar biasa untuk Pendidikan di
+                  Indonesia. Kembali lagi nanti untuk melihat apa yang baru!"
+        />
+      </Helmet>
       <div className="isolate bg-white flex justify-center h-screen">
         <div className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
           <svg
